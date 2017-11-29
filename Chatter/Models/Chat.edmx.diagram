@@ -6,6 +6,13 @@
     <edmx:Diagrams>
       <Diagram DiagramId="77f8e211254441e2ac7be6e9698710e4" Name="Diagram1">
         <EntityTypeShape EntityType="ChatterModel.Chat" Width="1.5" PointX="1.375" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.AspNetRole" Width="1.5" PointX="3.375" PointY="2.5" />
+        <EntityTypeShape EntityType="ChatterModel.AspNetUserClaim" Width="1.5" PointX="7.875" PointY="1" />
+        <EntityTypeShape EntityType="ChatterModel.AspNetUserLogin" Width="1.5" PointX="7.875" PointY="3.75" />
+        <EntityTypeShape EntityType="ChatterModel.AspNetUser" Width="1.5" PointX="5.625" PointY="1.375" />
+        <AssociationConnector Association="ChatterModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="ChatterModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="ChatterModel.AspNetUserRoles" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
